@@ -50,6 +50,14 @@
     - ไม่ควรเก็บข้อมูลเอาไว้บนคอมพิวเตอร์แบบ plain text
     - แนะนำให้เก็บข้อมูลเอาไว้ในโปรแกรมประเภท Password Manager อย่างเช่นโปรแกรม [KeePass](https://keepass.info/) เป็นต้น
 
+## Version ของโปรแกรมต่างๆ ที่ใช้เขียนบทความ
+- Microsoft Windows Version 10.0.18362.207 (64-bit)
+- Google Chrome Version 75.0.3770.100 (Official Build) (64-bit)
+- [BitBox Wallet App Version 4.9.0](https://shiftcrypto.ch/app/)
+- [BitBox01 Firmware Version 6.1.1](https://shiftcrypto.ch/app/)
+- [Digital Bitbox Backup Center v1.0.0](https://github.com/digitalbitbox/html_backup/tree/v1.0.0)
+- [BIP39 Tool v0.3.12](https://github.com/iancoleman/bip39/tree/0.3.12)
+
 ## ข้อมูลเพิ่มเติม
 - [BIP คืออะไร? และกระเป๋าฮาร์ดแวร์ทำการแบ็คอัพจากคำ 24 คำได้อย่างไร?](https://siambc.com/bip-คืออะไร/)
 - [วิธีใช้งาน: การใช้ KeePassXC](https://ssd.eff.org/th/module/วิธีใช้งาน-การใช้-keepassxc)
