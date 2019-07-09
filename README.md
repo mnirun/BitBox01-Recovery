@@ -1,5 +1,5 @@
 # BitBox01-Recovery
-วิธีการกู้ข้อมูลเหรียญ Bitcoin และ Ethereum จาก [Digital BitBox01](https://shiftcrypto.ch/bitbox01/) / BitBox01 Recovery Guide for Bitcoin and Ethereum
+คู่มือการกู้ข้อมูล Bitcoin และ Ethereum จาก [Digital BitBox01](https://shiftcrypto.ch/bitbox01/) / BitBox01 Recovery Guide for Bitcoin and Ethereum
 
 ![BitBox01](/Pictures/bb01_hero_320.png)
 
@@ -20,7 +20,7 @@
 2. ทำการถอดสาย LAN, ปิด Wifi เพื่อตัดการเชื่อมต่อจาก internet
 3. เมื่อทำการ recovery ข้อมูลทั้งหมดเสร็จแล้ว แนะนำให้ทำการ restart Windows ก่อน จึงค่อยกลับมาใช้งานตามปกติ
 
-## ขั้นตอนการกู้ข้อมูลเหรียญ Bitcoin และ Ethereum จาก Digital BitBox01
+## ขั้นตอนการกู้ข้อมูล Bitcoin และ Ethereum จาก Digital BitBox01
 
 1. เปิดไฟล์ PDF จาก backup microSD ทำการ copy "Wallet backup" ไว้
 2. เปิดไฟล์ "backup.html" ที่อยู่ใน folder "digitalbitbox-html_backup-89b35aa" จากนั้นให้
