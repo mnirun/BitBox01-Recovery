@@ -1,5 +1,5 @@
 # BitBox01-Recovery
-คู่มือการกู้ข้อมูล Bitcoin และ Ethereum จาก [Digital BitBox01](https://shiftcrypto.ch/bitbox01/) / BitBox01 Recovery Guide for Bitcoin and Ethereum
+คู่มือการกู้ข้อมูล Bitcoin, Litecoin และ Ethereum จาก [Digital BitBox01](https://shiftcrypto.ch/bitbox01/) / BitBox01 Recovery Guide for Bitcoin, Litecoin and Ethereum
 
 ![BitBox01](/Pictures/bb01_hero_320.png)
 
