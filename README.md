@@ -35,7 +35,7 @@
 4. เปิดไฟล์ "bip39-standalone.html" จากนั้นให้
     - เลือก Coin ที่เราต้องการ ระหว่าง
         - BTC - Bitcoin
-        - LTC - Litecoin สำหรับ Litecoin จะไม่สามารถกูข้อมูลได้ทันที ต้องทำการแก้ไขไฟล์ bip39-standalone.html ตามวิธีในห้วข้อ [การแก้ไขไฟล์ bip39-standalone.html ให้รองรับการกู้ข้อมูล Litecoin จาก Digital BitBox01](#user-content-การแก้ไขไฟล์-bip39-standalone.html-ให้รองรับการกู้ข้อมูล-litecoin-จาก-digital-bitbox01) ก่อน จึงจะทำตามขั้นตอนต่อไปได้
+        - LTC - Litecoin สำหรับ Litecoin จะไม่สามารถกูข้อมูลได้ทันที ต้องทำการแก้ไขไฟล์ bip39-standalone.html ตามวิธีในห้วข้อ [การแก้ไขไฟล์ bip39-standalone.html ให้รองรับการกู้ข้อมูล Litecoin จาก Digital BitBox01](#user-content-การแก้ไขไฟล์-bip39-standalonehtml-ให้รองรับการกู้ข้อมูล-litecoin-จาก-digital-bitbox01) ก่อน จึงจะทำตามขั้นตอนต่อไปได้
         - ETH - Ethereum
     - paste "BIP32 extended master private key" ลงในช่อง "BIP32 Root Key" แล้วรอสักครู่ โปรแกรมจะคำนวนข้อมูลให้
 
