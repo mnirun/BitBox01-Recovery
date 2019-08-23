@@ -85,7 +85,7 @@ bitcoinjs.bitcoin.networks.litecoinXprv.p2wpkhInP2sh = {
 
 ![BitBox01](/Pictures/bip32_litecoin_modified.png)
 
-Credit: [Issue with extended keys on Litecoin #96](https://github.com/iancoleman/bip39/issues/96)
+Credit: [Issue with extended keys on Litecoin #96](https://github.com/iancoleman/bip39/issues/96#issuecomment-502194456)
 
 ## Version ของโปรแกรมต่างๆ ที่ใช้เขียนบทความ
 - Microsoft Windows Version 10.0.18362.207 (64-bit)
