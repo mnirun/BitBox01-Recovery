@@ -47,7 +47,9 @@
     - ถ้าเลือก Coin เป็น ETH - Ethereum ให้เลือก BIP44
 
 6. ข้อมูล address, public key และ private key ของ BitBox01 จะปรากฏอยู่ที่ Derived Addresses
-7. ตรรวจสอบ address จาก "BIP39 Tool" กับ "BitBox Wallet App" ว่าตรงกันหรือไม่ ถ้าตรงกันแสดงว่าข้อมูลทั้งหมดถูกต้อง
+7. ตรรวจสอบ address จาก "BIP39 Tool" ว่าตรงกันหรือไม่ ถ้าตรงกันแสดงว่าข้อมูลทั้งหมดถูกต้อง
+    - สำหรับ Bitcoin และ Litecoin ให้ตรวจสอบกับ "BitBox Wallet App"
+    - สำหรับ Ethereum ให้ตรวจสอบกับ [MyEtherWallet](https://www.myetherwallet.com/)
 8. ทำการสำรองข้อมูล address, public key และ private key ของ BitBox01 ไปไว้ในที่ปลอดภัย
     - ไม่ควรเก็บข้อมูลเอาไว้บนคอมพิวเตอร์แบบ plain text
     - แนะนำให้เก็บข้อมูลเอาไว้ในโปรแกรมประเภท Password Manager อย่างเช่นโปรแกรม [KeePass](https://keepass.info/) เป็นต้น
