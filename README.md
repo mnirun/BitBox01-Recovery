@@ -20,7 +20,7 @@
 2. ทำการถอดสาย LAN, ปิด Wifi เพื่อตัดการเชื่อมต่อจาก internet
 3. เมื่อทำการ recovery ข้อมูลทั้งหมดเสร็จแล้ว แนะนำให้ทำการ restart Windows ก่อน จึงค่อยกลับมาใช้งานตามปกติ
 
-## ขั้นตอนการกู้ข้อมูล Bitcoin และ Ethereum จาก Digital BitBox01
+## ขั้นตอนการกู้ข้อมูล Bitcoin, Litecoin และ Ethereum จาก Digital BitBox01
 
 1. เปิดไฟล์ PDF จาก backup microSD ทำการ copy "Wallet backup" ไว้
 2. เปิดไฟล์ "backup.html" ที่อยู่ใน folder "digitalbitbox-html_backup-89b35aa" จากนั้นให้
@@ -35,6 +35,7 @@
 4. เปิดไฟล์ "bip39-standalone.html" จากนั้นให้
     - เลือก Coin ที่เราต้องการ ระหว่าง
         - BTC - Bitcoin
+        - LTC - Litecoin สำหรับ Litecoin จะไม่สามารถกูข้อมูลได้ทันที ต้องทำการแก้ไขไฟล์ bip39-standalone.html ตามวิธีในห้วข้อ [การแก้ไขไฟล์ bip39-standalone.html ให้รองรับการกู้ข้อมูล Litecoin จาก Digital BitBox01](#user-content-การแก้ไขไฟล์-bip39-standalone.html-ให้รองรับการกู้ข้อมูล-litecoin-จาก-digital-bitbox01) ก่อน จึงจะทำตามขั้นตอนต่อไปได้
         - ETH - Ethereum
     - paste "BIP32 extended master private key" ลงในช่อง "BIP32 Root Key" แล้วรอสักครู่ โปรแกรมจะคำนวนข้อมูลให้
 
@@ -42,6 +43,7 @@
 
 5. เมื่อคำนวนเสร็จแล้ว ให้เลื่อนลงไปที่ Derivation Path โดยที่
     - ถ้าเลือก Coin เป็น BTC - Bitcoin ให้เลือก BIP49
+    - ถ้าเลือก Coin เป็น LTC - Litecoin ให้เลือก BIP49 จากนั้นให้เอาเครื่องหมาย ✓ ออกจากหัวข้อ **Prefixes**
     - ถ้าเลือก Coin เป็น ETH - Ethereum ให้เลือก BIP44
 
 6. ข้อมูล address, public key และ private key ของ BitBox01 จะปรากฏอยู่ที่ Derived Addresses
@@ -49,6 +51,41 @@
 8. ทำการสำรองข้อมูล address, public key และ private key ของ BitBox01 ไปไว้ในที่ปลอดภัย
     - ไม่ควรเก็บข้อมูลเอาไว้บนคอมพิวเตอร์แบบ plain text
     - แนะนำให้เก็บข้อมูลเอาไว้ในโปรแกรมประเภท Password Manager อย่างเช่นโปรแกรม [KeePass](https://keepass.info/) เป็นต้น
+
+## การแก้ไขไฟล์ bip39-standalone.html ให้รองรับการกู้ข้อมูล Litecoin จาก Digital BitBox01
+[BIP39 Tool v0.3.12](https://github.com/iancoleman/bip39/tree/0.3.12) ไม่สามารถกู้ข้อมูล Litecoin จาก Digital BitBox01 ได้ทันที ต้องมีการแก้ไขไฟล์ bip39-standalone.html ก่อน โดยทำการเพิ่ม code ดังนี้
+
+```
+bitcoinjs.bitcoin.networks.litecoinXprv.p2wpkh = {
+	baseNetwork: "litecoin",
+	messagePrefix: '\x19Litecoin Signed Message:\n',
+	bech32: 'ltc',
+	bip32: {
+		public: 0x0488b21e,
+		private: 0x0488ade4
+	},
+	pubKeyHash: 0x30,
+	scriptHash: 0x32,
+	wif: 0xb0
+};
+
+bitcoinjs.bitcoin.networks.litecoinXprv.p2wpkhInP2sh = {
+	baseNetwork: "litecoin",
+	messagePrefix: '\x19Litecoin Signed Message:\n',
+	bech32: 'ltc',
+	bip32: {
+		public: 0x0488b21e,
+		private: 0x0488ade4
+	},
+	pubKeyHash: 0x30,
+	scriptHash: 0x32,
+	wif: 0xb0
+};
+```
+
+![BitBox01](/Pictures/bip32_litecoin_modified.png)
+
+Credit: [Issue with extended keys on Litecoin #96](https://github.com/iancoleman/bip39/issues/96)
 
 ## Version ของโปรแกรมต่างๆ ที่ใช้เขียนบทความ
 - Microsoft Windows Version 10.0.18362.207 (64-bit)
